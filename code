@@ -1,0 +1,56 @@
+
+score = 0
+score = int(score)
+
+
+#details of students
+
+name = input("enter student's name: ")
+roll = input("enter student's roll number:")
+
+#define
+Q = {"What is the capital city of Telangana": "2.Hyderabad",
+     "What is the largest country in the world": "3.Russia",
+     "What is the longest river in the world": "1.River Nile"}
+#quiz
+q1 = print("What is the capital city of Telangana?")
+print("1.Hanamkonda")
+print("2.Hyderabad")
+print("3.Warangal")
+print("4.karimnagar")
+a1 = input("enter the choice: ")
+
+if a1 == Q["What is the capital city of Telangana"]:
+    print("correct ans")
+    score=score+1
+else:
+    print("wrong ans")
+
+q2 = print("What is the largest country in the world?")
+print("1.India")
+print("2.China")
+print("3.Russia")
+print("4.America")
+a2 = input("enter the choice: ")
+
+if a2 == Q["What is the largest country in the world"]:
+    print("correct ans")
+    score=score+1
+else:
+    print("wrong ans")
+
+q3 = print("What is the longest river in the world?")
+print("1.River Nile")
+print("2.River Indus")
+print("3.River Gangas")
+print("4.River Narmadha")
+a3 = input("enter the choice: ")
+
+if a3 == Q["What is the longest river in the world"]:
+    print("correct ans")
+    score=score+1
+else:
+    print("wrong ans")
+
+
+print("your total score is "+ str(score)+" out of 3")
